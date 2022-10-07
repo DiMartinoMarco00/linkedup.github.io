@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+               <a href="index.html" class="logo"><img src="img/logo.png" alt="c' è un problema nella visualizzazione dell' immagine"></a>
+
+               <div class="search-box">
+                 <img src="img/search.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                 <input type="text" placeholder="Cerca">
+               </div>
+            </div>
+
+            <div class="navbar-center">
+               <ul>
+                  <li><a href="#" class="active-link"><img src="img/home.png" alt="c' è un problema nella visualizzazione dell' immagine"> <span>Home</span></a></li>
+                  <li><a href="#"><img src="img/network.png" alt="c' è un problema nella visualizzazione dell' immagine"> <span>La mia rete</span></a></li>
+                  <li><a href="#"><img src="img/jobs.png" alt="c' è un problema nella visualizzazione dell' immagine"> <span>I miei lavori</span></a></li>
+                  <li><a href="#"><img src="img/message.png" alt="c' è un problema nella visualizzazione dell' immagine"> <span>Messaggi</span></a></li>
+                  <li><a href="#"><img src="img/notification.png" alt="c' è un problema nella visualizzazione dell' immagine"> <span>Notifiche</span></a></li>
+               </ul>
+            </div>
+
+            <div class="navbar-right">
+                <div class="online">
+                    <img class="nav-profile-img" src="img/user-1.png" onclick="toggleMenu()" alt="c' è un problema nella visualizzazione dell' immagine">
+                </div>
+            </div>
+
+        <!-------------------------------------- profile-dropdown-menu ----------------------------------------------->
+
+            <div class="profile-menu-wrap" id="profileMenu">
+                <div class="profile-menu">
+                    <div class="user-info">
+                        <img src="img/user-1.png" alt="c' è un problema nella visualizzazione dell' immagine">
+
+                        <div>
+                            <h3>Steve Rogers</h3>
+                            <a href="profile.html">Visualizza il tuo profilo</a>
+                        </div>
+                    </div><!-------------------------- fine div.user-info ----------------------------->
+
+                    <hr>
+
+                    <a href="#" class="profile-menu-link">
+                        <img src="img/feedback.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                        <p>Dacci i tuoi feedback</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="profile-menu-link">
+                        <img src="img/setting.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                        <p>Impostazioni e Privacy</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="profile-menu-link">
+                        <img src="img/help.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                        <p>Assistenza e supporto</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="profile-menu-link">
+                        <img src="img/display.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                        <p>Display e accessibilità</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="profile-menu-link">
+                        <img src="img/logout.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                        <p>Esci</p>
+                        <span>></span>
+                    </a>
+                </div><!-------------------------- fine div.profile-menu ----------------------------->
+            </div><!-------------------------- fine div.profile-menu-wrap ----------------------------->
+        </nav>
+    </header>
+
+    <!-------------------------------------------------- container ---------------------------------------------------------->
+
+    <section class="container">
+
+        <!-------------------------- left-sidebar ----------------------------->
+        <aside class="left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="img/cover-pic.png" class="cover" alt="c' è un problema nella visualizzazione dell' immagine">
+
+                <div class="sidebar-profile-info">
+                   <img src="img/user-1.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                   <h1>Steve Rogers</h1>
+                   <h3>Web Developer presso Microsoft</h3>
+
+                   <ul>
+                     <li>Visualizzazioni del tuo profilo <span>100</span></li>
+                     <li>Visualizzazioni dei post <span>50</span></li>
+                     <li>Connessioni <span>20</span></li>
+                   </ul>
+                </div><!-- fine div.sidebar-profile-info -->
+
+                <div class="sidebar-profile-link">
+                   <a href="#"><img src="img/items.png" alt="c' è un problema nella visualizzazione dell' immagine"> I miei articoli</a>
+                   <a href="#"><img src="img/premium.png" alt="c' è un problema nella visualizzazione dell' immagine"> Prova premium</a>
+                </div><!-- fine div.sidebar-profile-link -->
+            </div><!--fine div.sidebar-profile-box-->
+
+            <div class="sidebar-activity" id="sidebarActivity">
+                <h3>ATTIVITÀ RECENTI</h3>
+                <a href="#"><img src="img/recent.png" alt="c' è un problema nella visualizzazione dell' immagine"> Sviluppo Web</a>
+                <a href="#"><img src="img/recent.png" alt="c' è un problema nella visualizzazione dell' immagine"> UI design</a>
+                <a href="#"><img src="img/recent.png" alt="c' è un problema nella visualizzazione dell' immagine"> UX design</a>
+                <a href="#"><img src="img/recent.png" alt="c' è un problema nella visualizzazione dell' immagine"> Sviluppo Front-End</a>
+                <a href="#"><img src="img/recent.png" alt="c' è un problema nella visualizzazione dell' immagine"> Sviluppo Back-End</a>
+                <a href="#"><img src="img/recent.png" alt="c' è un problema nella visualizzazione dell' immagine"> SQL</a>
+                <a href="#"><img src="img/recent.png" alt="c' è un problema nella visualizzazione dell' immagine"> Database</a>
+
+                <h3>GRUPPI</h3>
+                <a href="#"><img src="img/group.png" alt="c' è un problema nella visualizzazione dell' immagine"> Gruppo di Web design</a>
+                <a href="#"><img src="img/group.png" alt="c' è un problema nella visualizzazione dell' immagine"> Apprendi HTML e CSS</a>
+                <a href="#"><img src="img/group.png" alt="c' è un problema nella visualizzazione dell' immagine"> Gruppo Java e JavaScript</a>
+                <a href="#"><img src="img/group.png" alt="c' è un problema nella visualizzazione dell' immagine"> Apprendi SQL</a>
+
+                <h3>HASHTAG</h3>
+                <a href="#"><img src="img/hashtag.png" alt="c' è un problema nella visualizzazione dell' immagine"> Web Design</a>
+                <a href="#"><img src="img/hashtag.png" alt="c' è un problema nella visualizzazione dell' immagine"> User Interface</a>
+                <a href="#"><img src="img/hashtag.png" alt="c' è un problema nella visualizzazione dell' immagine"> User Experience</a>
+
+                <div class="discover-more-link">
+                   <a href="#">Scopri di più</a>
+                </div><!-------------------------- fine div.discover-more-link ----------------------------->
+            </div><!-------------------------- fine div.sidebar-activity ----------------------------->
+
+            <p id="showMoreLink" onclick="toggleActivity()">Mostra di più <b>+</b></p>
+        </aside>
+
+        <!-------------------------- main-content ----------------------------->
+        <main class="main-content">
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="img/user-1.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                    <textarea row="2" placeholder="Scrivi un post"></textarea>
+                </div><!-------------------------- fine div.create-post-input ----------------------------->
+
+                <div class="create-post-links">
+                   <li><img src="img/photo.png" alt="c' è un problema nella visualizzazione dell' immagine"> Foto</li>
+                   <li><img src="img/video.png" alt="c' è un problema nella visualizzazione dell' immagine"> Video</li>
+                   <li><img src="img/event.png" alt="c' è un problema nella visualizzazione dell' immagine"> Event</li>
+                   <li>Post</li>
+                </div><!-------------------------- fine div.create-links ----------------------------->
+            </div><!-------------------------- fine div.create-post ----------------------------->
+
+
+            <div class="sort-by">
+               <hr>
+               <p>Ordina per: <span>Superiore <img src="img/down-arrow.png" alt="c' è un problema nella visualizzazione dell' immagine"></span></p>
+            </div><!-------------------------- fine div.sort-by ----------------------------->
+
+
+            <div class="post">
+               <div class="post-author">
+                  <img src="img/user-2.png" alt="c' è un problema nella visualizzazione dell' immagine">
+
+                  <div>
+                    <h3>Benjamin Button</h3>
+                    <span>Founder e CEO di FIAT Group | Angel Investor</span>
+                    <span>2 ore fa</span>
+                  </div>
+               </div><!-------------------------- fine div.post-author ----------------------------->
+
+               <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                At provident cum commodi aliquam sint quisquam! 
+                Eligendi harum nesciunt enim quidem eum suscipit iste dolorem? Impedit, possimus! Iure nemo consequatur ab.
+               </p><img src="img/post-image-1.png" width="100%" alt="c' è un problema nella visualizzazione dell' immagine">
+
+               <div class="post-stats">
+                  <div>
+                    <img src="img/thumbsup.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                    <img src="img/love.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                    <img src="img/clap.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                    <span class="liked-users">Piace a Jason Momoa e altri 75</span>
+                  </div>
+
+                  <div>
+                    <span>22 commenti &middot; 40 condivisioni &middot;</span>
+                  </div>
+               </div><!-------------------------- fine div.post-stats ----------------------------->
+
+
+               <div class="post-activity">
+                  <div>
+                     <img src="img/user-1.png" class="post-activity-user-icon" alt="c' è un problema nella visualizzazione dell' immagine">
+                     <img src="img/down-arrow.png" class="post-activity-arrow-icon" alt="c' è un problema nella visualizzazione dell' immagine">
+                  </div>
+
+                  <div class="post-activity-link">
+                     <img src="img/like.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                     <span>Mi piace</span>
+                  </div>
+
+                  <div class="post-activity-link">
+                    <img src="img/comment.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                    <span>Commenta</span>
+                  </div>
+
+                  <div class="post-activity-link">
+                    <img src="img/share.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                    <span>Condividi</span>
+                  </div>
+
+                  <div class="post-activity-link">
+                    <img src="img/send.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                    <span>Invia</span>
+                  </div>
+               </div><!-------------------------- fine div.post-activity ----------------------------->
+            </div><!-------------------------- fine div.post ----------------------------->
+
+
+            <div class="post">
+                <div class="post-author">
+                   <img src="img/user-3.png" alt="c' è un problema nella visualizzazione dell' immagine">
+ 
+                   <div>
+                     <h3>Elisa Powell</h3>
+                     <span>Data Analist Luxor Group</span>
+                     <span>2 ore fa</span>
+                   </div>
+                </div><!-------------------------- fine div.post-author ----------------------------->
+ 
+                <p>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                 At provident cum commodi aliquam sint quisquam! 
+                 Eligendi harum nesciunt enim quidem eum suscipit iste dolorem? Impedit, possimus! Iure nemo consequatur ab.
+                </p><img src="img/post-image-2.png" width="100%" alt="c' è un problema nella visualizzazione dell' immagine">
+ 
+                <div class="post-stats">
+                   <div>
+                     <img src="img/thumbsup.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                     <img src="img/love.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                     <img src="img/clap.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                     <span class="liked-users">Piace a Jason Momoa e altri 75</span>
+                   </div>
+ 
+                   <div>
+                     <span>22 commenti &middot; 40 condivisioni &middot;</span>
+                   </div>
+                </div><!-------------------------- fine div.post-stats ----------------------------->
+ 
+ 
+                <div class="post-activity">
+                   <div>
+                      <img src="img/user-1.png" class="post-activity-user-icon" alt="c' è un problema nella visualizzazione dell' immagine">
+                      <img src="img/down-arrow.png" class="post-activity-arrow-icon" alt="c' è un problema nella visualizzazione dell' immagine">
+                   </div>
+ 
+                   <div class="post-activity-link">
+                      <img src="img/like.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                      <span>Mi piace</span>
+                   </div>
+ 
+                   <div class="post-activity-link">
+                     <img src="img/comment.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                     <span>Commenta</span>
+                   </div>
+ 
+                   <div class="post-activity-link">
+                     <img src="img/share.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                     <span>Condividi</span>
+                   </div>
+ 
+                   <div class="post-activity-link">
+                     <img src="img/send.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                     <span>Invia</span>
+                   </div>
+                </div><!-------------------------- fine div.post-activity ----------------------------->
+             </div><!-------------------------- fine div.post ----------------------------->
+
+
+             <div class="post">
+                <div class="post-author">
+                   <img src="img/user-4.png" alt="c' è un problema nella visualizzazione dell' immagine">
+ 
+                   <div>
+                     <h3>Emily Wattson</h3>
+                     <span>Digital Marketing Specialist Amazon Corporation</span>
+                     <span>2 ore fa</span>
+                   </div>
+                </div><!-------------------------- fine div.post-author ----------------------------->
+ 
+                <p>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                 At provident cum commodi aliquam sint quisquam! 
+                 Eligendi harum nesciunt enim quidem eum suscipit iste dolorem? Impedit, possimus! Iure nemo consequatur ab.
+                </p><img src="img/post-image-3.png" width="100%" alt="c' è un problema nella visualizzazione dell' immagine">
+ 
+                <div class="post-stats">
+                   <div>
+                     <img src="img/thumbsup.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                     <img src="img/love.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                     <img src="img/clap.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                     <span class="liked-users">Piace a Jason Momoa e altri 75</span>
+                   </div>
+ 
+                   <div>
+                     <span>22 commenti &middot; 40 condivisioni &middot;</span>
+                   </div>
+                </div><!-------------------------- fine div.post-stats ----------------------------->
+ 
+ 
+                <div class="post-activity">
+                   <div>
+                      <img src="img/user-1.png" class="post-activity-user-icon" alt="c' è un problema nella visualizzazione dell' immagine">
+                      <img src="img/down-arrow.png" class="post-activity-arrow-icon" alt="c' è un problema nella visualizzazione dell' immagine">
+                   </div>
+ 
+                   <div class="post-activity-link">
+                      <img src="img/like.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                      <span>Mi piace</span>
+                   </div>
+ 
+                   <div class="post-activity-link">
+                     <img src="img/comment.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                     <span>Commenta</span>
+                   </div>
+ 
+                   <div class="post-activity-link">
+                     <img src="img/share.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                     <span>Condividi</span>
+                   </div>
+ 
+                   <div class="post-activity-link">
+                     <img src="img/send.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                     <span>Invia</span>
+                   </div>
+                </div><!-------------------------- fine div.post-activity ----------------------------->
+             </div><!-------------------------- fine div.post ----------------------------->
+
+
+             <div class="post">
+                <div class="post-author">
+                   <img src="img/user-5.png" alt="c' è un problema nella visualizzazione dell' immagine">
+ 
+                   <div>
+                     <h3>Harry Fisher</h3>
+                     <span>Fotografo e videomaker Apple Corporation</span>
+                     <span>2 ore fa</span>
+                   </div>
+                </div><!-------------------------- fine div.post-author ----------------------------->
+ 
+                <p>
+                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                 At provident cum commodi aliquam sint quisquam! 
+                 Eligendi harum nesciunt enim quidem eum suscipit iste dolorem? Impedit, possimus! Iure nemo consequatur ab.
+                </p><img src="img/post-image-4.png" width="100%" alt="c' è un problema nella visualizzazione dell' immagine">
+ 
+                <div class="post-stats">
+                   <div>
+                     <img src="img/thumbsup.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                     <img src="img/love.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                     <img src="img/clap.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                     <span class="liked-users">Piace a Jason Momoa e altri 75</span>
+                   </div>
+ 
+                   <div>
+                     <span>22 commenti &middot; 40 condivisioni &middot;</span>
+                   </div>
+                </div><!-------------------------- fine div.post-stats ----------------------------->
+ 
+ 
+                <div class="post-activity">
+                   <div>
+                      <img src="img/user-1.png" class="post-activity-user-icon" alt="c' è un problema nella visualizzazione dell' immagine">
+                      <img src="img/down-arrow.png" class="post-activity-arrow-icon" alt="c' è un problema nella visualizzazione dell' immagine">
+                   </div>
+ 
+                   <div class="post-activity-link">
+                      <img src="img/like.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                      <span>Mi piace</span>
+                   </div>
+ 
+                   <div class="post-activity-link">
+                     <img src="img/comment.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                     <span>Commenta</span>
+                   </div>
+ 
+                   <div class="post-activity-link">
+                     <img src="img/share.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                     <span>Condividi</span>
+                   </div>
+ 
+                   <div class="post-activity-link">
+                     <img src="img/send.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                     <span>Invia</span>
+                   </div>
+                </div><!-------------------------- fine div.post-activity ----------------------------->
+             </div><!-------------------------- fine div.post ----------------------------->
+        </main>
+
+        <!-------------------------- right-sidebar ----------------------------->
+        <aside class="right-sidebar">
+            <div class="sidebar-news">
+                <img class="info-icon" src="img/more.png" alt="c' è un problema nella visualizzazione dell' immagine">
+
+                <h3>Notizie in tendenza</h3>
+
+                <a href="#">Elevata richiesta di manodopera qualificata</a>
+                <span>1 giorno fa &middot; 10,934 lettori</span>
+
+                <a href="#">Le carriere crescono anche in orizzontale</a>
+                <span>20 ore fa &middot; 1,552 lettori</span>
+
+                <a href="#">Meno visti di lavoro per gli Stati Uniti, più per il Regno Unito</a>
+                <span>15 ore fa &middot; 27,290 lettori</span>
+
+                <a href="#">più assunzioni = maggior fiducia?</a>
+                <span>10 ore fa Set &middot; 8,208 lettori</span>
+
+                <a href="#">Elon Musk è il più ricco del mondo</a>
+                <span>2 ore fa &middot; 4,205 lettori</span>
+
+                <a href="#" class="read-more-link">Leggi altro</a>
+            </div><!-- fine div.sidebar-news -->
+
+            <div class="sidebar-ad">
+                <small>Annunci &middot; &middot; &middot;</small>
+                <p>Padroneggiare i 5 principi del web design</p>
+
+                <div>
+                    <img src="img/user-1.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                    <img src="img/mi-logo.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                </div>
+
+                <b>Brand e domanda di Xiaomi</b>
+                <a href="#" class="ad-link">Leggi altro</a>
+            </div><!-- fine div.sidebar-ad -->
+
+            <div class="sidebar-useful-links">
+               <a href="#">Chi siamo</a>
+               <a href="#">Accessibilità</a>
+               <a href="#">Centro di assistenza</a>
+               <a href="#">Politica sulla privacy</a>
+               <a href="#">Scarica app</a>
+               <a href="#">Altro</a>
+
+               <div class="copyright">
+                  <img src="img/logo.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                  <p>Linkedup &copy; 2022. Tutti i diritti sono riservati e protetti da copyright.</p>
+               </div>
+            </div><!-- fine div.sidebar-useful-links -->
+        </aside>
+    </section>
+
+
+    <script src="JS/toggle-menu.js"></script>
+    <script src="JS/toggle-activity.js"></script>
+</body>
+</html>

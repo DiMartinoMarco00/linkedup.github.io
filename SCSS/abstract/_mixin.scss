@@ -1,0 +1,24 @@
+
+//Questa mixin dovrebbe impostare tutte le proprietà flexbox
+@mixin flexbox() 
+{
+    
+}
+
+//Questa mixin deve avere come parametri tutte le proprietà CSS di posizionamento
+@mixin position()
+{
+
+}
+
+//Questa mixin dovrebbe avere come parametri tutte le proprietà css di un testo
+@mixin text() 
+{
+    
+}
+
+//Questa mixin dovrebbe avere come parametri padding, border, e margin (anche i singoli lati di padding, border e margin)
+@mixin boxModel() 
+{
+    
+}

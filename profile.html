@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profilo</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+               <a href="index.html" class="logo"><img src="img/logo.png" alt="c' è un problema nella visualizzazione dell' immagine"></a>
+
+               <div class="search-box">
+                 <img src="img/search.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                 <input type="text" placeholder="Cerca">
+               </div>
+            </div>
+
+            <div class="navbar-center">
+               <ul>
+                  <li><a href="#" class="active-link"><img src="img/home.png" alt="c' è un problema nella visualizzazione dell' immagine"> <span>Home</span></a></li>
+                  <li><a href="#"><img src="img/network.png" alt="c' è un problema nella visualizzazione dell' immagine"> <span>La mia rete</span></a></li>
+                  <li><a href="#"><img src="img/jobs.png" alt="c' è un problema nella visualizzazione dell' immagine"> <span>I miei lavori</span></a></li>
+                  <li><a href="#"><img src="img/message.png" alt="c' è un problema nella visualizzazione dell' immagine"> <span>Messaggi</span></a></li>
+                  <li><a href="#"><img src="img/notification.png" alt="c' è un problema nella visualizzazione dell' immagine"> <span>Notifiche</span></a></li>
+               </ul>
+            </div>
+
+            <div class="navbar-right">
+                <div class="online">
+                    <img class="nav-profile-img" src="img/user-1.png" onclick="toggleMenu()" alt="c' è un problema nella visualizzazione dell' immagine">
+                </div>
+            </div>
+
+        <!-------------------------------------- profile-dropdown-menu ----------------------------------------------->
+
+            <div class="profile-menu-wrap" id="profileMenu">
+                <div class="profile-menu">
+                    <div class="user-info">
+                        <img src="img/user-1.png" alt="c' è un problema nella visualizzazione dell' immagine">
+
+                        <div>
+                            <h3>Steve Rogers</h3>
+                            <a href="#">Visualizza il tuo profilo</a>
+                        </div>
+                    </div><!-------------------------- fine div.user-info ----------------------------->
+
+                    <hr>
+
+                    <a href="#" class="profile-menu-link">
+                        <img src="img/feedback.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                        <p>Dacci i tuoi feedback</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="profile-menu-link">
+                        <img src="img/setting.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                        <p>Impostazioni e Privacy</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="profile-menu-link">
+                        <img src="img/help.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                        <p>Assistenza e supporto</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="profile-menu-link">
+                        <img src="img/display.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                        <p>Display e accessibilità</p>
+                        <span>></span>
+                    </a>
+
+                    <a href="#" class="profile-menu-link">
+                        <img src="img/logout.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                        <p>Esci</p>
+                        <span>></span>
+                    </a>
+                </div><!-------------------------- fine div.profile-menu ----------------------------->
+            </div><!-------------------------- fine div.profile-menu-wrap ----------------------------->
+        </nav>
+    </header>
+
+
+    <!------------------------------------------- container ----------------------------------------------------------->
+
+    <section class="container">
+        <div class="profile-main">
+            <div class="profile-container">
+              <img src="img/cover-pic.png" width="100%" alt="c' è un problema nella visualizzazione dell' immagine">
+
+                <div class="profile-container-inner">
+                    <img src="img/user-1.png" class="profile-pic" alt="c' è un problema nella visualizzazione dell' immagine">
+
+                    <h1>Steve Rogers</h1>
+                    <p>Sviluppatore Web presso Microsoft | ex sviluppatore presso DataStack e stagista presso Oracle</p>
+                    <p>San Francisco, Stati Uniti, &middot; <a href="#">info contatti</a></p>
+
+                    <div class="mutual-connection">
+                       <img src="img/user-2.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                       <span>1 connessione reciproca: Orlando Diggs</span>
+                    </div><!-------------------------- fine div.mutual-connection ----------------------------->
+
+                    <div class="profile-btn">
+                        <a href="#" class="primary-btn"><img src="img/connect.png" alt="c' è un problema nella visualizzazione dell' immagine"> Collegati</a>
+                        <a href="#"><img src="img/chat.png" alt="c' è un problema nella visualizzazione dell' immagine"> Messaggia</a>
+                    </div><!-------------------------- fine div.profile-btn ----------------------------->
+                </div><!-------------------------- fine div.profile-container-inner ----------------------------->
+            </div><!-------------------------- fine div.profile-container ----------------------------->
+
+            <div class="profile-description">
+                <h2>Chi sono</h2>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Quisquam sit reprehenderit fugiat dolorem aliquid praesentium molestiae 
+                  quis neque asperiores hic corrupti exercitationem totam aliquam nulla molestias provident nesciunt, autem quam?
+                </p>
+                <a href="#" class="see-more-link">Guarda altro...</a>
+            </div><!-------------------------- fine div.profile-description ----------------------------->
+
+
+            <div class="profile-description">
+                <h2>Esperienze</h2>
+                
+                <div class="profile-desc-row">
+                    <img src="img/microsoft.png" alt="c' è un problema nella visualizzazione dell' immagine">
+
+                    <div>
+                       <h3>Sviluppatore Front-End</h3>
+                       <b>Microsoft &middot; Full Time</b>
+                       <b>Feb 2021- Presente &middot; 18 mesi</b>
+                       <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Repellendus laborum quibusdam enim vero adipisci consequatur excepturi 
+                        quis recusandae eaque optio unde dolorum, eius, iure voluptas qui quisquam sequi saepe esse?
+                       </p>
+
+                       <hr>
+                    </div>
+                </div><!-------------------------- fine div.profile-desc-row ----------------------------->
+
+
+                <div class="profile-desc-row">
+                    <img src="img/slack.png" alt="c' è un problema nella visualizzazione dell' immagine">
+
+                    <div>
+                       <h3>Sviluppatore Full-stack</h3>
+                       <b>Slack &middot; Full Time</b>
+                       <b>Giu 2018- Gen 2021 &middot; 30 mesi</b>
+                       <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Repellendus laborum quibusdam enim vero adipisci consequatur excepturi 
+                        quis recusandae eaque optio unde dolorum, eius, iure voluptas qui quisquam sequi saepe esse?
+                       </p>
+
+                       <hr>
+                    </div>
+                </div><!-------------------------- fine div.profile-desc-row ----------------------------->
+
+
+                <div class="profile-desc-row">
+                    <img src="img/google.png" alt="c' è un problema nella visualizzazione dell' immagine">
+
+                    <div>
+                       <h3>Sviluppatore Back-End</h3>
+                       <b>Google Inc. &middot; Full Time</b>
+                       <b>Set 2015 - Mag 2018 &middot; 32 mesi</b>
+                       <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                        Repellendus laborum quibusdam enim vero adipisci consequatur excepturi 
+                        quis recusandae eaque optio unde dolorum, eius, iure voluptas qui quisquam sequi saepe esse?
+                       </p>
+                    </div>
+                </div><!-------------------------- fine div.profile-desc-row ----------------------------->
+
+                <hr>
+                <a href="#" class="experience-link">mostra tutte le 7 esperienze <img src="img/right-arrow.png" alt="c' è un problema nella visualizzazione dell' immagine"></a>
+            </div><!-------------------------- fine div.profile-description ----------------------------->
+
+
+            <div class="profile-description">
+                <h2>Formazione</h2>
+
+                <div class="profile-desc-row">
+                    <img src="img/mit.png" alt="c' è un problema nella visualizzazione dell' immagine">
+ 
+                    <div>
+                       <h3>MIT Univerity</h3>
+                       <b>Master in sviluppo Enterprise Web Application</b>
+                       <b>2014 - 2015</b>
+ 
+                       <hr>
+                    </div>
+                 </div><!-------------------------- fine div.profile-desc-row ----------------------------->
+
+                <div class="profile-desc-row">
+                   <img src="img/stanford.png" alt="c' è un problema nella visualizzazione dell' immagine">
+
+                   <div>
+                      <h3>Stanford University</h3>
+                      <b>Ingegneria Informatica</b>
+                      <b>2009 - 2014</b>
+
+                      <hr>
+                   </div>
+                </div><!-------------------------- fine div.profile-desc-row ----------------------------->
+
+                <div class="profile-desc-row">
+                    <img src="img/north.png" alt="c' è un problema nella visualizzazione dell' immagine">
+ 
+                    <div>
+                       <h3>North High School</h3>
+                       <b>Tecnico Informatico</b>
+                       <b>2004 - 2009</b>
+                    </div>
+                 </div><!-------------------------- fine div.profile-desc-row ----------------------------->
+            </div><!-------------------------- fine div.profile-description ----------------------------->
+
+
+            <div class="profile-description">
+               <h2>Skills</h2>
+
+               <a href="#" class="skills-btn">Leadership</a>
+               <a href="#" class="skills-btn">Comunicazione</a>
+               <a href="#" class="skills-btn">Pianificazione</a>
+               <a href="#" class="skills-btn">Progettazione</a>
+               <a href="#" class="skills-btn">Codifica</a>
+               <a href="#" class="skills-btn">UI/UX design</a>
+               <a href="#" class="skills-btn">HTML5, CSS3, SASS, Bootstrap5, Suite Adobe</a>
+               <a href="#" class="skills-btn">Sviluppo Web Front-End</a>
+               <a href="#" class="skills-btn">JavaScript, Typescript, React JS, Angular</a>
+               <a href="#" class="skills-btn">Sviluppo Web Back-End</a>
+               <a href="#" class="skills-btn">Java SE, Java EE, Spring</a>
+               <a href="#" class="skills-btn">PHP, Laravel, Wordpress e Woocommerce, Joomla, Prestashop</a>
+               <a href="#" class="skills-btn">Amministazione Database, Archiviazione Dati, Interrogazione Dati, Analisi Dati</a>
+               <a href="#" class="skills-btn">Database relazionali, SQL, Database NoSQL, MySQL, MongoDB, Oracle DB</a>
+            </div><!-------------------------- fine div.profile-description ----------------------------->
+
+
+            <div class="profile-description">
+                <h2>Lingue</h2>
+ 
+                <a href="#" class="language-btn">Inglese</a>
+                <a href="#" class="language-btn">Spagnolo</a>
+                <a href="#" class="language-btn">Francese</a>
+             </div><!-------------------------- fine div.profile-description ----------------------------->
+        </div><!-------------------------- fine div.profile-main ----------------------------->
+
+
+        <div class="profile-sidebar">
+            <div class="sidebar-ad">
+                <small>Annunci &middot; &middot; &middot;</small>
+                <p>Padroneggiare i 5 principi del web design</p>
+
+                <div>
+                    <img src="img/user-1.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                    <img src="img/mi-logo.png" alt="c' è un problema nella visualizzazione dell' immagine">
+                </div>
+
+                <b>Brand e domanda di Xiaomi</b>
+                <a href="#" class="ad-link">Leggi altro</a>
+            </div><!-- fine div.sidebar-ad -->
+
+            <div class="sidebar-people">
+                <h3>Persone che potresti conoscere</h3>
+
+                <div class="sidebar-people-row">
+                   <img src="img/user-2.png" alt="c' è un problema nella visualizzazione dell' immagine">
+
+                   <div>
+                      <h2>Tony Stark</h2>
+                      <p>Responsabile marketing di Oracle</p>
+                      <a href="#">Connettiti</a>
+                   </div>
+                </div><!-------------------------- fine div.profile-people-row ----------------------------->
+
+
+                <div class="sidebar-people-row">
+                    <img src="img/user-3.png" alt="c' è un problema nella visualizzazione dell' immagine">
+ 
+                    <div>
+                       <h2>Jennifer Aniston</h2>
+                       <p>Web Master di Indeed</p>
+                       <a href="#">Connettiti</a>
+                    </div>
+                 </div><!-------------------------- fine div.profile-people-row ----------------------------->
+
+                 <div class="sidebar-people-row">
+                    <img src="img/user-4.png" alt="c' è un problema nella visualizzazione dell' immagine">
+ 
+                    <div>
+                       <h2>Alicia Wood</h2>
+                       <p>Ingegnere Meccanico di Mercedez</p>
+                       <a href="#">Connettiti</a>
+                    </div>
+                 </div><!-------------------------- fine div.profile-people-row ----------------------------->
+
+                 <div class="sidebar-people-row">
+                    <img src="img/user-5.png" alt="c' è un problema nella visualizzazione dell' immagine">
+ 
+                    <div>
+                       <h2>Tony Stark</h2>
+                       <p>Social Media Manager di Mediaset</p>
+                       <a href="#">Connettiti</a>
+                    </div>
+                 </div><!-------------------------- fine div.profile-people-row ----------------------------->
+            </div><!-------------------------- fine div.profile-people----------------------------->
+        </div><!-------------------------- fine div.profile-sidebar ----------------------------->
+    </section>
+
+
+    <footer class="profile-footer">
+        <div class="sidebar-useful-links">
+            <a href="#">Chi siamo</a>
+            <a href="#">Accessibilità</a>
+            <a href="#">Centro di assistenza</a>
+            <a href="#">Politica sulla privacy</a>
+            <a href="#">Scarica app</a>
+            <a href="#">Altro</a>
+
+            <div class="copyright">
+               <img src="img/logo.png" alt="c' è un problema nella visualizzazione dell' immagine">
+               <p>Linkedup &copy; 2022. Tutti i diritti sono riservati e protetti da copyright.</p>
+            </div>
+        </div><!-- fine div.sidebar-useful-links -->
+    </footer>
+
+    <script src="JS/toggle-menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+@media only screen and (max-width: 767px)
+{
+    .container
+    {
+        padding: 15px 3%;
+    }
+
+    .left-sidebar,
+    .right-sidebar
+    {
+        flex-basis: 100%;
+        position: relative;
+        top: unset;
+    }
+
+    .main-content
+    {
+        flex-basis: 100%;
+    }
+
+    .post-stats div 
+    {
+        margin: 2px 0;
+    }
+
+    .post-activity
+    {
+        justify-content: space-between;
+    }
+
+    .post-activity-link 
+    {
+        span 
+        {
+            display: none;
+        }
+
+        img 
+        {
+            margin-right: 0;
+        }
+    }
+
+
+    #showMoreLink
+    {
+        display: block;
+        width: fit-content;
+        margin: 10px auto;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+    .sidebar-activity
+    {
+        display: none;
+    }
+
+    .sidebar-activity.open-activity
+    {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 767px)
+{
+    .container
+    {
+        padding: 15px 7.5%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px)
+{
+    .container
+    {
+        padding: 15px 7.5%;
+    }
+
+    .left-sidebar,
+    .right-sidebar
+    {
+        flex-basis: 100%;
+        position: relative;
+        top: unset;
+    }
+
+    .main-content
+    {
+        flex-basis: 100%;
+    }
+
+    .post-activity
+    {
+        justify-content: space-between;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px)
+{
+   .container
+   {
+      padding: 15px 2%;
+   }
+
+   .left-sidebar
+   {
+      padding: 0;
+
+      ul li 
+      {
+        font-size: 11px;
+      }
+   }
+
+   .sidebar-profile-link
+   {
+      a 
+      {
+        font-size: 11px;
+        justify-content: flex-start;
+      }
+
+      img 
+      {
+         width: 15px;
+         margin-right: 2px;
+         margin-left: 3px;
+      }
+   }
+
+   .post-activity-link 
+   {
+        span 
+        {
+            font-size: 12px;
+            margin-right: 10px;
+        }
+
+        img:first-child
+        {
+            margin-left: 5px;
+        }
+
+        img 
+        {
+            margin-right: 4px;
+        }
+   }
+
+   .right-sidebar h3 
+   {
+      font-size: 17px;
+   }
+
+   .sidebar-useful-links
+   {
+       padding: 10px 25px;
+   }
+
+   .copyright
+   {
+      margin-top: 20px;
+   }
+}

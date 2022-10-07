@@ -1,0 +1,16 @@
+%sidebar
+{
+    flex-basis: 25%;
+    align-self: flex-start;
+    position: sticky;
+    top: 20px;
+}
+
+%btn
+{
+    display: inline-block;
+    margin: 10px 5px;
+    padding: 6px 18px;
+    font-size: 12px;
+    font-weight: 500;
+}

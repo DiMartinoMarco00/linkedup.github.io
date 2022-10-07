@@ -1,0 +1,185 @@
+.profile-main
+{
+    flex-basis: 73%;
+}
+
+.profile-container 
+{
+    background-color: $white-color;
+
+    h1 
+    {
+        font-size: 28px;
+        font-weight: 600;
+        color: $black-color;
+    }
+
+    p
+    {
+        font-weight: 500;
+    }
+
+    p+p  
+    {
+        font-weight: normal;
+        margin-top: 5px;
+
+        a 
+        {
+            color: $underline-link-hover-color;
+            font-weight: 500;
+        }
+    }
+}
+
+.profile-container-inner
+{
+    padding: 0 4% 10px;
+}
+
+.profile-pic
+{
+    width: 150px;
+    border-radius: 50%;
+    margin-top: -75px;
+    padding: 5px;
+    background-color: $white-color;
+}
+
+.mutual-connection
+{
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+
+    img 
+    {
+        width: 30px;
+        border-radius: 50%;
+        margin-right: 5px;
+    }
+}
+
+.profile-btn 
+{
+    margin: 20px 0;
+
+    a 
+    {
+        display: inline-flex;
+        align-items: center;
+        padding: 6px 15px;
+        border-radius: 4px;
+        margin-right: 10px;
+        background-color: $btn-color;
+
+        img 
+        {
+            width: 18px;
+            margin-right: 5px;
+        }
+    }
+
+    a.primary-btn 
+    {
+        background-color: $underline-link-hover-color;
+        color: $white-color;
+    }
+}
+
+.profile-description
+{
+    background-color: $white-color;
+    padding: 20px 4% 30px;
+    margin: 12px 0;
+
+    h2 
+    {
+        color: $dark-color;
+        margin: 10px 0 20px;
+        font-weight: 600;
+    }
+}
+
+.see-more-link
+{
+    display: block;
+    text-align: right;
+    font-size: 15px;
+}
+
+.profile-desc-row
+{
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0;
+
+    img 
+    {
+        width: 50px;
+        margin-right: 25px;
+        margin-top: 5px;
+    }
+
+    div 
+    {
+        width: 100%;
+    }
+
+    h3 
+    {
+        font-size: 18px;
+        font-weight: 600;
+        color: $dark-color;
+    }
+
+    b
+    {
+        display: block;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    p 
+    {
+        margin-top: 15px;
+    }
+
+    hr 
+    {
+        border: 0;
+        border-bottom: 1px solid #999;
+        margin-top: 10px;
+    }
+}
+
+
+.experience-link
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    font-weight: 500;
+
+    img 
+    {
+        width: 20px;
+        margin-left: 8px;
+    }
+}
+
+
+.skills-btn
+{
+    @extend %btn;
+    border: 1px solid $headings-sidebar-profile-box-color;
+    border-radius: 30px;
+}
+
+
+.language-btn
+{
+    @extend %btn;
+    background-color: $btn-color;
+}

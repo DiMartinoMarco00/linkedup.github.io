@@ -1,0 +1,114 @@
+@media only screen and (max-width: 767px)
+{
+    .search-box
+    {
+        background-color: transparent;
+        width: auto;
+        padding: 0%;
+
+        input 
+        {
+           width: 0;
+           padding: 0;
+        }
+    }
+
+    .navbar-center 
+    {
+        ul li a 
+        {
+            padding-right: 0;
+            margin: 5px;
+
+            span 
+            {
+                display: none;
+            }
+        }
+    }
+
+    .nav-profile-img
+    {
+        width: 30px;
+    }
+}
+
+
+@media only screen and (min-width: 768px) and (max-width: 991px)
+{
+    .navbar 
+    {
+        padding: 6px 2%;
+    }
+
+    .search-box
+    {
+        width: 125px;
+        padding: 0 10px;
+    }
+    
+    .navbar-center ul li 
+    {
+        a 
+        {
+            font-size: 12px;
+            margin: 5px 4px;
+            padding-right: 2.5px;
+
+            img 
+            {
+                font-size: calc($icon-width / 2);
+            }
+        }
+    }
+
+    .nav-profile-img 
+    {
+        width: 30px;
+    }
+
+    .online::after
+    {
+        width: 5px;
+        height: 5px;
+    }
+
+    .profile-menu-wrap
+    {
+        right: 2.5%;
+        width: 300px;
+    }
+
+    .user-info img 
+    {
+        width: 40px;
+    }
+
+    .profile-menu-link
+    {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px)
+{
+    .navbar 
+    {
+        padding: 6px 2%;
+    }
+
+    .search-box
+    {
+        width: 175px;
+    }
+
+    .navbar-center ul li a 
+    {
+        margin: 5px 6px;
+    }
+
+    .profile-menu-wrap
+    {
+        right: 1%;
+    }
+}

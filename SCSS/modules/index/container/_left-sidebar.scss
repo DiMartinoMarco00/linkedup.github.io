@@ -1,0 +1,144 @@
+.left-sidebar
+{
+    @extend %sidebar;
+}
+
+.sidebar-profile-box 
+{
+    background-color: $white-color;
+
+    .cover 
+    {
+        width: 100%;
+    }
+}
+
+.sidebar-profile-info
+{
+    padding: 0 25px;
+
+    img 
+    {
+        width: 90px;
+        border-radius: 50%;
+        background-color: $white-color;
+        padding: 4px;//aggiunge il bordo bianco intorno all' immagine
+        margin-top: -45px;//alza l' immagine di 45px questo valore corrisponde alla metà della larghezza dell' immagine
+    }
+
+    h1
+    {
+        font-size: 20px;
+        font-weight: 600;
+        color: $black-color;
+    }
+
+    h3
+    {
+        font-size: 14px;
+        font-weight: 500;
+        color:$headings-sidebar-profile-box-color;
+    }
+
+    ul 
+    {
+        list-style-type: none;
+        margin: 20px 0;
+
+        li 
+        {
+            width: 100%;
+            margin: 5px 0;
+            font-size: 12px;
+
+            span 
+            {
+                float: right; //per spostare il numero all' interno di span sul lato destro
+                color: $underline-link-hover-color;
+            }
+        }
+    }
+}
+
+
+.sidebar-profile-link
+{
+    display: flex;
+    align-items: center;
+    border-top: 1px solid $border-color;
+
+    a 
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-basis: 50%;
+        padding: 15px 0;
+        font-size: 12px;
+        border-left: 1px solid $border-color;
+
+        &:first-child
+        {
+            border-left: 0;
+        }
+
+        img 
+        {
+            width: 20px;
+            margin-right: 10px;
+        }
+    }
+}
+
+
+.sidebar-activity
+{
+    background-color: $white-color;
+    padding: 5px 25px;
+    margin: 12px 0;
+
+    h3 
+    {
+        color: $headings-sidebar-profile-box-color;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 20px 0 10px;
+    }
+
+    a 
+    {
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        font-weight: 500;
+        color: $text-sidebar-activity-color;
+        margin: 3px 0;
+
+        img 
+        {
+            width: 20px;
+            margin-right: 10px;
+        }
+    }
+}
+
+
+.discover-more-link
+{
+    border-top: 1px solid $border-color;
+    text-align: center;
+    margin: 20px -25px 0;
+
+    a 
+    {
+        color: $underline-link-hover-color;
+        display: inline-block;
+        margin: 10px 0;
+    }
+}
+
+
+#showMoreLink
+{
+    display: none;
+}

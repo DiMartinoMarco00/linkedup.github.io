@@ -1,0 +1,195 @@
+.navbar
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $white-color;
+    padding: 6px 6%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-left
+{
+    display: flex;
+    align-items: center;
+}
+
+.logo img 
+{
+   width: $icon-width;
+   margin-right: 15px;
+   display: block;
+}
+
+.search-box
+{
+    display: flex;
+    align-items: center;
+    background-color: $light-color;
+    width: 250px;
+    border-radius: 20px;
+    padding: 0 15px;
+
+    img 
+    {
+        width: 14px;
+    }
+
+    input
+    {
+        width: 100%;
+        background-color: transparent;
+        padding: 8px;
+        border: none;
+        outline: none;
+    }
+}
+
+.navbar-center ul li
+{
+    display: inline-block;
+    list-style-type: none;
+
+    a 
+    {
+        display: flex;
+        align-items: center;
+        position: relative;
+        font-size: 14px;
+        margin: 5px 8px;//8px di spazio esterno a destra e a sinistra tra ogni link
+        padding-right: 5px;//spazio interno destro tra il testo e l' icona all' interno del link
+
+        img 
+        {
+            width: $icon-width;
+        }
+    }
+
+    a::after  
+    {
+        content: '';
+        position: absolute;
+        bottom: -15px;
+        width: 0;
+        height: 2px;
+        background-color: $underline-link-hover-color;
+        transition: width 1s;
+    }
+
+    a:hover::after, 
+    a.active-link::after
+    {
+        width: 100%;//la linea blu (a::after) sotto al link a e resa visibile al passaggio del cursore del mouse
+    }
+}
+
+.nav-profile-img
+{
+    width: 40px;
+    border-radius: 50%;
+    display: block;
+    cursor: pointer;
+    position: relative;
+}
+
+.online
+{
+    position: relative;
+
+    &::after
+    {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 7px;
+        height: 7px;
+        background-color: $online-icon-color;
+        border: 2px solid $white-color;
+        border-radius: 50%;
+    }
+}
+
+
+.profile-menu-wrap
+{
+    position: absolute;
+    top: 100%;
+    right: 5%;
+    width: 320px;
+    max-height: 0;//il menù è invisibile
+    overflow: hidden;
+    transition: max-height 1s;
+}
+
+.profile-menu-wrap.open-menu 
+{
+    max-height: 400px;
+}
+
+.profile-menu 
+{
+    background-color: $black-color;
+    color: $white-color;
+    padding: 20px;
+    margin: 10px;
+
+    hr 
+    {
+        border: 0;
+        height: 1px;
+        width: 100%;
+        background-color: $white-color;
+        margin: 15px 0 10px;
+    }
+}
+
+.user-info
+{
+    display: flex;
+    align-items: center;
+
+    img 
+    {
+        width: 50px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+
+    h3 
+    {
+        font-weight: 500;
+        margin-bottom: -7px;
+    }
+
+    a 
+    {
+        color: #c9dbf8;
+        font-size: 13px;
+    }
+}
+
+.profile-menu-link
+{
+    display: flex;
+    align-items: center;
+    color: $white-color;
+    margin: 12px 0;
+    font-size: 14px;
+
+    p 
+    {
+        width: 100%;
+    }
+
+    img 
+    {
+        width: 35px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+}
+

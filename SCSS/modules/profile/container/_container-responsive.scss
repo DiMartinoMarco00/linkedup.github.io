@@ -1,0 +1,40 @@
+@media only screen and (max-width: 767px)
+{ 
+    .profile-main,
+    .profile-sidebar
+    {
+        flex-basis: 100%;
+    }
+
+    .profile-container
+    {
+        font-size: 14px;
+    }
+
+    .profile-pic
+    {
+        width: 100px;
+        margin-top: -50px;
+    }
+
+    .profile-description
+    {
+        font-size: 14px;
+    }
+
+    .see-more-link
+    {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px)
+{
+    
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1199px)
+{
+
+}
